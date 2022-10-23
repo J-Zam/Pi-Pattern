@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="https://cdn-icons-png.flaticon.com/512/7288/7288381.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pi Pattern</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="https://cdn-icons-png.flaticon.com/512/7288/7288381.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pi Pattern</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="options">
+      <span class="counter" id="counter">0 out of 100000</span>
+      
+      <div class="colors">
+        <div class="colors__item color-0">0</div>
+        <div class="colors__item color-1">1</div>
+        <div class="colors__item color-2">2</div>
+        <div class="colors__item color-3">3</div>
+        <div class="colors__item color-4">4</div>
+        <div class="colors__item color-5">5</div>
+        <div class="colors__item color-6">6</div>
+        <div class="colors__item color-7">7</div>
+        <div class="colors__item color-8">8</div>
+        <div class="colors__item color-9">9</div>
+      </div>
+      
+      <button id="btn__start" class="btn__start">Start</button>
+    </section>
+
+    <canvas id="canvas"></canvas>
+
+  </div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

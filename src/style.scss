@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: .9rem;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  #canvas {
+    background-color: #000;
+    z-index: 0;
+    margin-top: 5rem;
+
+    @media (min-width: 768px) {
+      margin-top: 0;
+    }
+  }
+
+  .options {
+    position: absolute;
+    top: .5rem;
+    left: .3rem;
+    z-index: 10;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 2px solid rgba(255, 255, 255, 0.44);
+    width: 13.1rem;
+    text-align: center;
+
+    button {
+      padding: .5rem 1rem;
+      border: none;
+      outline: none;
+      background-color: #43a12c;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 800;
+      transition: all .5s;
+      width: 100%;
+      cursor: pointer;
+      margin-top: .8rem;
+
+      &:hover {
+        background-color: #38c016;
+
+      }
+    }
+
+    .counter {
+      color: #fff;
+    }
+
+    .colors {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin-top: 1rem;
+      gap: .7rem;
+      border-radius: 1rem;
+      font-weight: 600;
+
+      &__item {
+        background-color: #fff;
+      }
+
+      .color-0 {
+        background-color: #9e0142;
+      }
+
+      .color-1 {
+        background-color: #d53e4f;
+      }
+
+      .color-2 {
+        background-color: #f46d43;
+      }
+
+      .color-3 {
+        background-color: #fdae61;
+      }
+
+      .color-4 {
+        background-color: #fee08b;
+      }
+
+      .color-5 {
+        background-color: #e6f598;
+      }
+
+      .color-6 {
+        background-color: #abdda4;
+      }
+
+      .color-7 {
+        background-color: #66c2a5;
+      }
+
+      .color-8 {
+        background-color: #3288bd;
+      }
+
+      .color-9 {
+        background-color: #5e4fa2;
+      }
+    }
+  }
+}
