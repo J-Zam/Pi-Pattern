@@ -2,6 +2,6 @@
  
 Visualization of a circumferential distribution shaped by the numbers so far seen in the first 100,000 digits of Pi.
 
-![Captura](https://user-images.githubusercontent.com/51100407/197417925-654c222e-09a4-4e80-89a9-f66e67b184d4.PNG)
+![Captura](https://user-images.githubusercontent.com/51100407/198694264-1cdbda42-9751-4939-b4d5-e69f7b2ed6dc.PNG)
 
 🔗 More about Pi: https://www.rd.com/list/pi-facts/

@@ -65,7 +65,7 @@ async function begin() {
       color = `#fdae61`;
     }
     if (digit === 4) {
-      angle = randomNumber(144, 180);
+      angle = randomNumber(114, 180);
       color = `#f46d43`;
     }
     if (digit === 5) {
@@ -94,7 +94,7 @@ async function begin() {
 
     ctx.beginPath();
     ctx.fillStyle = color;
-    ctx.arc(xCurrent, yCurrent, 1.2, 0, Math.PI * 2);
+    ctx.arc(xCurrent, yCurrent, 1.5, 0, Math.PI * 2);
     ctx.fill();
     await sleep(delay);
   }
@@ -107,8 +107,8 @@ function sleep(ms: number) {
 }
 
 function randomNumber(min: number, max: number) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
+  min = Math.ceil(Math.pow(min, .96));
+  max = Math.floor(Math.pow(max, .96));
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
